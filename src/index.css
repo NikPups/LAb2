@@ -1,0 +1,70 @@
+/* Сброс стандартных отступов */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Центрируем все содержимое */
+.appContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Высота экрана */
+    background-color: #f7fafc; /* Светлый фон */
+}
+
+.container {
+    padding: 32px;
+    width: 100%;
+    max-width: 800px; /* Увеличена максимальная ширина контейнера */
+    background-color: white;
+    border-radius: 16px; /* Увеличены скругления */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Центрирование текста */
+}
+
+h1 {
+    font-size: 3rem; /* Увеличен размер шрифта заголовка */
+    margin-bottom: 16px;
+}
+
+p {
+    font-size: 1.5rem; /* Увеличен размер шрифта для счетчика */
+    margin-bottom: 24px;
+}
+
+button {
+    padding: 16px 32px;
+    background-color: #3182ce;
+    color: white;
+    border: none;
+    border-radius: 12px; /* Увеличены скругления кнопки */
+    cursor: pointer;
+    font-size: 1.25rem; /* Увеличен размер шрифта на кнопке */
+    transition: background-color 0.3s;
+}
+
+    button:hover {
+        background-color: #2b6cb0;
+    }
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 24px; /* Увеличен отступ снизу */
+}
+
+nav li {
+    margin-bottom: 12px; /* Увеличен отступ между ссылками */
+}
+
+nav a {
+    text-decoration: none;
+    color: #3182ce;
+    font-size: 1.25rem; /* Увеличен размер шрифта для ссылок */
+}
+
+    nav a:hover {
+        text-decoration: underline;
+    }
