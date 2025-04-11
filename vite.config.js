@@ -1,7 +1,15 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
-// https://vite.dev/config/
+// https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
-})
+    plugins: [react()],
+    server: {
+        // Убедитесь, что сервер использует UTF-8
+        charset: 'utf-8',
+    },
+    build: {
+        // Убедитесь, что сборка использует UTF-8
+        charset: 'utf-8',
+    },
+});

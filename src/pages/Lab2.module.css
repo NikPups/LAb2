@@ -1,0 +1,86 @@
+/* Общий контейнер, центрируем страницу */
+.lab2Container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f7fafc;
+}
+
+/* Контейнер с контентом */
+.lab2Content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 32px;
+    width: 100%;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+    /* Заголовок */
+    .lab2Content h1 {
+        font-size: 3rem;
+        margin-bottom: 16px;
+        color: #2d3748;
+    }
+
+    /* Текст счетчика */
+    .lab2Content p {
+        font-size: 1.5rem;
+        margin-bottom: 24px;
+        color: #4a5568;
+    }
+
+    /* Кнопка */
+    .lab2Content button {
+        padding: 16px 32px;
+        background-color: #3182ce;
+        color: white;
+        border: none;
+        border-radius: 12px;
+        cursor: pointer;
+        font-size: 1.25rem;
+        transition: background-color 0.3s;
+    }
+
+        .lab2Content button:hover {
+            background-color: #2b6cb0;
+        }
+
+/* Стили для навигации */
+.lab2Nav {
+    width: 100%;
+    margin-bottom: 24px; /* Отступ вниз */
+}
+
+    .lab2Nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center; /* Центрируем ссылки */
+        gap: 16px; /* Расстояние между элементами */
+    }
+
+    .lab2Nav button {
+        background: none;
+        border: none;
+        color: #3182ce;
+        font-size: 1.25rem;
+        cursor: pointer;
+        padding: 0;
+        transition: color 0.3s;
+    }
+
+        .lab2Nav button:hover {
+            color: #2b6cb0; /* Изменение цвета при наведении */
+            text-decoration: underline; /* Подчеркивание при наведении */
+            background: none; /* Убедитесь, что фон не изменяется */
+            outline: none; /* Уберите обводку */
+        }
